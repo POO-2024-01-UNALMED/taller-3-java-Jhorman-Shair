@@ -29,7 +29,7 @@ public class TV {
 	  
 	  public void setCanal(int x){
 		  if (estado==true) {
-			  if (x>1 && x<200) {
+			  if (x>1 && x<120) {
 				  canal=x;  
 			  }
 		  }
