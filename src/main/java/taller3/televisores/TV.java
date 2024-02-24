@@ -28,7 +28,11 @@ public class TV {
 	  }
 	  
 	  public void setCanal(int x){
-	    canal=x;
+		  if (estado==true) {
+			  if (x>1 && x<200) {
+				  canal=x;  
+			  }
+		  }
 	  }
 	  
 	  public int getPrecio(){
@@ -85,7 +89,7 @@ public class TV {
 	  
 	  public void canalUp(){
 	    if (estado==true){
-	     if (canal!=120){
+	     if (canal<120){
 	      canal+=1;
 	    } 
 	    }
@@ -93,7 +97,7 @@ public class TV {
 	  
 	  public void canalDown(){
 	    if (estado==true){
-	     if (canal!=1){
+	     if (canal>1){
 	      canal-=1;
 	    } 
 	    }

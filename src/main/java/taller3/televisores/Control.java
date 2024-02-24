@@ -16,19 +16,11 @@ public class Control {
 	  }
 	  
 	  public void canalUp(){
-	    if (tv.estado==true){
-	     if (tv.canal!=120){
-	      tv.canal+=1;
-	    } 
-	    }
+		  tv.canalUp();
 	  }
 	  
 	  public void canalDown(){
-	    if (tv.estado==true){
-	     if (tv.canal!=1){
-	      tv.canal-=1;
-	    } 
-	    }
+		  tv.canalDown();
 	  }
 	  
 	  public void volumenUp(){
