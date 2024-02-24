@@ -44,7 +44,11 @@ public class TV {
 	  }
 	  
 	  public void setVolumen(int a){
-	    volumen=a;
+		  if (estado==true) {
+			  if (a>=0 && a<=7) {
+				  volumen=a;  
+			  }
+		  }
 	  }
 	  
 	  public Control getControl(){
@@ -97,7 +101,7 @@ public class TV {
 	  
 	  public void volumenUp(){
 	    if (estado==true){
-	     if (volumen!=7){
+	     if (volumen<7){
 	      volumen+=1;
 	    } 
 	    }
@@ -105,7 +109,7 @@ public class TV {
 	  
 	  public void volumenDown(){
 	    if (estado==true){
-	     if (volumen!=0){
+	     if (volumen>0){
 	      volumen-=1;
 	    } 
 	    }

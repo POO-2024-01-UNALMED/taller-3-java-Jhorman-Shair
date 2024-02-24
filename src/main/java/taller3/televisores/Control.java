@@ -32,19 +32,11 @@ public class Control {
 	  }
 	  
 	  public void volumenUp(){
-	    if (tv.estado==true){
-	     if (tv.volumen!=7){
-	      tv.volumen+=1;
-	    } 
-	    }
+	    tv.volumenUp();
 	  }
 	  
 	  public void volumenDown(){
-	    if (tv.estado==true){
-	     if (tv.volumen!=0){
-	      tv.volumen-=1;
-	    } 
-	    }
+		  tv.volumenDown();
 	  }
 	  
 	  public void enlazar(TV u){
@@ -62,8 +54,8 @@ public class Control {
 	    
 	  }
 	  
-	  public void setVolumen(int a){
-		    tv.setVolumen(a);
+	  public void setVolumen(int a) {
+			tv.setVolumen(a);  
 	  }
 	  
 	  public void setCanal(int x){
